@@ -21,7 +21,7 @@ The second method will involve training a single agent with a single neural netw
 ```bash
 git clone git@github.com:mhyrzt/Simple-MADRL-Chess.git
 cd Simple-MADRL-Chess
-python3 -m pip install requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ## 🏋️ Train
@@ -70,7 +70,7 @@ if __name__ == "__main__":
         result_folder="results",
     )
     agent.train(
-        render_each=10, # render and save the game into a episode_{n}.mp4 file
+        render_each=10, # render and save the game into an episode_{n}.mp4 file
         save_on_learn=True # save the stats after each learning
     )
     agent.save()
@@ -114,19 +114,3 @@ Contributions to this project are welcome. If you have any ideas or suggestions,
 ## ⚠️ Warnings
 
 - Please note that the chess environment implemented in this project may have some bugs, particularly in the check and checkmate situations. While the environment has been designed to simulate the game of chess as accurately as possible, there may be some corner cases that have not been fully tested. We recommend using caution when interpreting the results of the agent's performance, particularly in situations where check and checkmate occur. We encourage users to report any issues they encounter to help improve the quality of the environment.
-
-## 🗣️ Citation
-
-```tex
-@misc{mahyar_riazati_2023_7789509,
-  author       = {Mahyar Riazati},
-  title        = {{Simple Multi Agent Deep Reinforcement Learning 
-                   Solution for Chess}},
-  month        = mar,
-  year         = 2023,
-  publisher    = {Zenodo},
-  version      = {1.0.0},
-  doi          = {10.5281/zenodo.7789509},
-  url          = {https://doi.org/10.5281/zenodo.7789509}
-}
-```

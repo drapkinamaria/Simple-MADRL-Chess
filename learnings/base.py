@@ -1,4 +1,4 @@
-import gym
+import gymnasium
 import torch as T
 import torch.nn as nn
 import numpy as np
@@ -8,7 +8,7 @@ from abc import ABC, abstractmethod
 class Learning(nn.Module, ABC):
     def __init__(
         self,
-        environment: gym.Env,
+        environment: gymnasium.Env,
         epochs: int,
         gamma: float,
         learning_rate: float

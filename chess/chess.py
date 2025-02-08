@@ -1,4 +1,4 @@
-import gym
+import gymnasium
 import copy
 import pygame
 import numpy as np
@@ -8,7 +8,7 @@ import chess.colors as Colors
 import chess.rewards as Rewards
 import chess.info_keys as InfoKeys
 
-from gym import spaces
+from gymnasium import spaces
 from typing import Union
 from pygame.font import Font
 from pygame.surface import Surface
@@ -16,7 +16,7 @@ from pygame.surface import Surface
 from chess.types import Cell
 
 
-class Chess(gym.Env):
+class Chess(gymnasium.Env):
     metadata: dict = {
         "render_mode": ("human", "rgb_array"),
     }

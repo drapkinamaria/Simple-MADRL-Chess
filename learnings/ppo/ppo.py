@@ -1,5 +1,5 @@
 import os
-import gym
+import gymnasium
 import numpy as np
 import torch as T
 import torch.optim as optim
@@ -16,7 +16,7 @@ from learnings.ppo.critic import Critic
 class PPO(Learning):
     def __init__(
         self,
-        environment: gym.Env,
+        environment: gymnasium.Env,
         hidden_layers: tuple[int],
         epochs: int,
         buffer_size: int,
