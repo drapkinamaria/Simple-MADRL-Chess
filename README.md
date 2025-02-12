@@ -19,7 +19,7 @@ The second method will involve training a single agent with a single neural netw
 ## 💾 Installation
 
 ```bash
-git clone git@github.com:mhyrzt/Simple-MADRL-Chess.git
+git clone https://github.com/drapkinamaria/Simple-MADRL-Chess.git
 cd Simple-MADRL-Chess
 python3 -m pip install -r requirements.txt
 ```
